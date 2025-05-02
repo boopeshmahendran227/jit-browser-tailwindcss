@@ -63,6 +63,8 @@ export interface Tailwindcss {
    * tailwindcss.getClassOrder(['left-3', 'inset-x-2', bg-red-500', 'bg-blue-500'])
    */
   getClassOrder: (classList: string[]) => string[]
+
+  getClassList: () => string[]
 }
 
 /**
