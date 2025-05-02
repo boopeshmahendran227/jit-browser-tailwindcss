@@ -41,6 +41,11 @@ export const createTailwindcss: typeof import('..').createTailwindcss = (
       const context = createContext(resolveConfig(tailwindConfig ?? {}))
       return defaultSort(context.getClassOrder(classList))
     },
+
+    getClassList: () => {
+      const context = createContext(resolveConfig(tailwindConfig ?? {}))
+      return context.getClassList()
+    },
   }
 }
 
